@@ -16,6 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.pages.home');
 });
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+});
+Route::get('/doctors', function () {
+    return view('frontend.pages.doctors');
+});
+Route::get('/dashboard1', function () {
+    return view('backend.layouts.master');
+});
+Route::get('/dashboard1', function () {
+    return view('backend.pages.dashboard_home');
+});
+Route::get('/dashboard1/students', function () {
+    return view('backend.pages.students');
+});
 
 Route::middleware([
     'auth:sanctum',

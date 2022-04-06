@@ -21,17 +21,18 @@
   <link rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
 </head>
 <body>
-
+  {{-- @include('frontend.layout.header')
+  @include('frontend.layout.header-banner') --}}
   @yield('content')
   <!-- Back to top button -->
   <div class="back-to-top"></div>
 
-@include('frontend.layout.header')
-@include('frontend.layout.header-banner')
-@include('frontend.layout.doctors')
+
+
+{{-- @include('frontend.layout.doctors')
 @include('frontend.layout.news')
 @include('frontend.layout.ads-banner')
-@include('frontend.layout.footer')
+@include('frontend.layout.footer') --}}
 
 <script src="{{asset('assets/js/jquery-3.5.1.min.js')}}"></script>
 
