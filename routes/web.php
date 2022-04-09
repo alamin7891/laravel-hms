@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Https\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,8 @@ Route::get('/dashboard1', function () {
 Route::get('/dashboard1', function () {
     return view('backend.pages.dashboard_home');
 });
+Route::get('/admin',[DashboardController::class, 'redirect']);
+
 Route::get('/dashboard1/students', function () {
     return view('backend.pages.students');
 });
