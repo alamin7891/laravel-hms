@@ -58,6 +58,14 @@
                     <input type="text" class="form-control p_input" name="phone" :value="old('phone')" required />
                   </div>
                   <div class="form-group">
+                    <label>Usertype</label>
+                    <select name="usertype" class="form-control p_input">
+                      <option value="" disabled>Select One</option>
+                      <option value="1" >Doctor</option>
+                      <option value="2" >Patient</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
                     <label>Address</label>
                     <input type="text" class="form-control p_input" name="address" :value="old('address')" required />
                   </div>

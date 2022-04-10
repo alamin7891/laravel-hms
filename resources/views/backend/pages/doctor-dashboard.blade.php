@@ -1,7 +1,7 @@
-@extends('backend.layouts.master')
+@extends('backend.layouts.master2')
 @section('content')
 <div class="row">
-  <h1>User Dashboard</h1>
+  <h1>Doctor Dashboard</h1>
     <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">

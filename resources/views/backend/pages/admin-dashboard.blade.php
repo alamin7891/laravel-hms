@@ -1,6 +1,7 @@
-@extends('backend.layouts.master')
+@extends('backend.layouts.master1')
 @section('content')
 <div class="row">
+  <h1>Admin Dashboard</h1>
     <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">

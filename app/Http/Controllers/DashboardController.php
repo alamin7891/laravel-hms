@@ -12,8 +12,10 @@ class DashboardController extends Controller
         if(Auth::id()){
             if(Auth::user()->usertype=='0'){
                 return view('backend.pages.admin-dashboard');
-            }else{
-                return view('backend.pages.user-dashboard');
+            }else if ('Auth::user'()->usertype=='1'){
+                return view('backend.pages.doctor-dashboard');
+            }else if ('Auth::user'()->usertype=='2'){
+                return view('backend.pages.patient-dashboard');
             }
         }else{
             return "You are not loged in";
